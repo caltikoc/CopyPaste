@@ -1,4 +1,4 @@
-# mrvancettiCopyPaste
+# mrVancettiCopyPaste.aix
 
 All code in my project named mrVancetti Copy Paste Extension is open source code. If you want to use it in a project or present it as your own plugin, you can use these codes.
 
