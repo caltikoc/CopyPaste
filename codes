@@ -78,7 +78,7 @@ public class MrVancettiCopyPaste extends AndroidNonvisibleComponent implements C
    */
   @SimpleFunction(description = "Copy text to clipboard. In case SuppressToast is true, the toast message " +
     "'Text copied' will be suppressed after copying a text to the clipboard.")
-  public void CopyString(String text) {
+  public void Copy(String text) {
     try {
       int sdk = android.os.Build.VERSION.SDK_INT;
       if (sdk < android.os.Build.VERSION_CODES.HONEYCOMB) {
@@ -105,7 +105,7 @@ public class MrVancettiCopyPaste extends AndroidNonvisibleComponent implements C
    */
   @SimpleFunction(description = "Paste text from clipboard. In case SuppressToast is true, the toast message " +
     "'Text pasted' will be suppressed after pasting a text from the clipboard.")
-  public String PasteString() {
+  public String Paste() {
     int sdk = android.os.Build.VERSION.SDK_INT;
     if (sdk < android.os.Build.VERSION_CODES.HONEYCOMB) {
       android.text.ClipboardManager clipboard = (android.text.ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
